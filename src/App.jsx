@@ -5,6 +5,7 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import Product from './components/Product';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/product" element={<Product />} />
           <Route exact path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </HashRouter>

@@ -4,8 +4,9 @@
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+   
+        "airbnb",
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -20,6 +21,7 @@
     "rules": {
         "quotes":["error","single"],
         "curly":"error",
-        "eqeqeq":"off"
+        "eqeqeq":"off",
+        "react/react-in-jsx-scope" :0
     }
 }

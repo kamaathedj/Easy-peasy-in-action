@@ -11,8 +11,8 @@ function Product() {
       <ul>
         {people.map((p) => (
           <div key={p.name}>
+            <p>{p.name}</p>
             <p>{p.dob}</p>
-            <li>{p.name}</li>
           </div>
 
         ))}
