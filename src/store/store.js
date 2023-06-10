@@ -1,5 +1,8 @@
 import { createStore, action } from 'easy-peasy';
 
+/**
+ * this is a people store
+ */
 const store = createStore({
   people: [
     {
@@ -13,8 +16,9 @@ const store = createStore({
   ],
 
   play: action((state) => {
-    // eslint-disable-next-line no-console
-    console.log(state.people.name);
+    state.people.forEach((element) => {
+      console.log(element.name);
+    });
   }),
 });
 
