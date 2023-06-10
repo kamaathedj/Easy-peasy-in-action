@@ -22,6 +22,7 @@
         "quotes":["error","single"],
         "curly":"error",
         "eqeqeq":"off",
-        "react/react-in-jsx-scope" :0
+        "react/react-in-jsx-scope" :0,
+        "no-console":0
     }
 }
